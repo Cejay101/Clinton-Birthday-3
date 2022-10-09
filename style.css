@@ -1,0 +1,179 @@
+:root {
+  --Softred: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+  --Darkbrown: hsl(25, 47%, 15%);
+  --Mediumbrown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Verypalerange: hsl(33, 100%, 98%);
+}
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--Cream);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  color:var(--Mediumbrown);
+  height: 100vh;
+  flex-direction: column;
+}
+img {
+  height: 3rem;
+}
+
+#container {
+  margin: auto;
+  width: 50%;
+  height: 600px;
+  position: relative;
+}
+.balance {
+  background-color: var(--Softred);
+  border-radius: 18px;
+  height: 7rem;
+  color: var(--Verypalerange);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+.balance-details {
+  display: flex;
+  flex-direction: column;
+}
+.balance-text {
+  font-size: 1rem;
+  padding-bottom: 5px;
+  color: var(--Cream);
+}
+.balance-num {
+  font-size: 2rem;
+}
+.chart {
+  background-color: var(--Verypalerange);
+  border-radius: 18px;
+  height: 78%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 2.5rem;
+}
+.chart-head {
+  font-size: 1.8rem;
+  color: var(--Darkbrown);
+  font-weight: 700;
+}
+/* .graph{
+  position: relative;
+  height: 16rem;
+
+} */
+.weekdays {
+  /* position: absolute; */
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-top: 2rem;
+
+}
+.day {
+  text-align: center;
+  color: var(--Mediumbrown);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.day div {
+  height: 11rem;
+  width: 3rem;
+  background-color: var(--Softred);
+  border-radius: 10px;
+  /* margin: 0.5rem; */
+}
+.mon div {
+ height: 3rem;
+}
+.tue div {
+ height: 6rem;
+}
+.wed div {
+ height: 12rem;
+}
+.thu div {
+ height: 5rem;
+}
+.fri div {
+ height: 4rem;
+}
+.sat div {
+ height: 7rem;
+}
+.sun div {
+ height: 5rem;
+}
+.line {
+  height: 2px;
+  width: 100%;
+  background: var(--Cream);
+  margin: 2rem 0;
+}
+.bottom-elements{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom-element-num{
+font-size:40px;
+color: var(--Darkbrown);
+font-weight: 700;
+}
+.bottom-info{
+  display: flex;
+  flex-direction: column;
+}
+.num{
+  color: var(--Darkbrown);
+  font-weight: 700;
+   margin-left:auto ;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media screen and (max-width:870px) {
+  
+  #container {
+  width: 85%;
+  position: relative;
+}
+  
+}
+@media screen and (max-width:500px) {
+
+#container {
+  width: 95%;
+  position: relative;
+}
+.chart {
+  padding: 1rem;
+}
+.chart-head {
+  font-size: 1.4rem;
+}
+
+.weekdays {
+  margin-top: 2rem;
+}
+.day div {
+  width: 2.8rem;
+}
+.line {
+  margin: 3rem 0;
+}}
